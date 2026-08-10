@@ -1,0 +1,844 @@
+{
+    "updatedAt":  "2026-08-11 03:03:41",
+    "source":  "https://api.bilibili.com/x/web-interface/view",
+    "order":  [
+                  "BV1o9uy6jEyM",
+                  "BV1eSMC6TENM",
+                  "BV1QZM16zEMK",
+                  "BV1GFVf6sECB",
+                  "BV1NfKw6AEeo",
+                  "BV1Tjgk6fEQw",
+                  "BV1wfT76GEME",
+                  "BV18egC6NEPm",
+                  "BV1sh3C6cEXN",
+                  "BV19wLX61EpR",
+                  "BV1cbuw6eE16",
+                  "BV15AdgB4En4",
+                  "BV1g4Ei6KEWJ",
+                  "BV15c7h6REzw"
+              ],
+    "summary":  {
+                    "videoCount":  14,
+                    "totalView":  1140916,
+                    "totalReply":  37290,
+                    "avgReplyRate":  2.2466,
+                    "avgLikeRate":  3.5447,
+                    "avgCoinRate":  6.0069,
+                    "avgFavoriteRate":  3.9024,
+                    "avgShareRate":  0.787
+                },
+    "videos":  [
+                   {
+                       "bvid":  "BV1o9uy6jEyM",
+                       "title":  "8月更新【秋叶ComfyUI-VX中文版】全面支持中文提示词输入！Win+Mac一键安装，支持20304050显卡解压即用，附comfyui本地部署一键安装包",
+                       "hasData":  true,
+                       "pubdate":  1786262763,
+                       "publishedAt":  "2026-08-09 16:06:03",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  5895,
+                       "reply":  118,
+                       "like":  235,
+                       "coin":  434,
+                       "favorite":  249,
+                       "share":  21,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  3,
+                       "dailyAvgView":  1965,
+                       "rates":  {
+                                     "reply":  2.0017,
+                                     "like":  3.9864,
+                                     "coin":  7.3622,
+                                     "favorite":  4.2239,
+                                     "share":  0.3562
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  5895,
+                                           "reply":  118,
+                                           "like":  235,
+                                           "coin":  434,
+                                           "favorite":  249,
+                                           "share":  21,
+                                           "danmaku":  11
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  2.0017,
+                                             "like":  3.9864,
+                                             "coin":  7.3622,
+                                             "favorite":  4.2239,
+                                             "share":  0.3562
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  5895,
+                                                 "days":  3,
+                                                 "dailyAvgView":  1965
+                                             }
+                                         ]
+                   },
+                   {
+                       "bvid":  "BV1eSMC6TENM",
+                       "title":  "【秋叶ComfyUI】秋叶最新发布！ComfyUI 旗舰中文版整合包来了！全中文界面支持中文提示词，Win+Mac一键下载安装教程（附新Comfyui整合包）",
+                       "hasData":  true,
+                       "pubdate":  1785908170,
+                       "publishedAt":  "2026-08-05 13:36:10",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  14276,
+                       "reply":  292,
+                       "like":  1211,
+                       "coin":  2275,
+                       "favorite":  1221,
+                       "share":  163,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  7,
+                       "dailyAvgView":  2039.43,
+                       "rates":  {
+                                     "reply":  2.0454,
+                                     "like":  8.4828,
+                                     "coin":  15.9358,
+                                     "favorite":  8.5528,
+                                     "share":  1.1418
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  14276,
+                                           "reply":  292,
+                                           "like":  1211,
+                                           "coin":  2275,
+                                           "favorite":  1221,
+                                           "share":  163,
+                                           "danmaku":  91
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  2.0454,
+                                             "like":  8.4828,
+                                             "coin":  15.9358,
+                                             "favorite":  8.5528,
+                                             "share":  1.1418
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  14276,
+                                                 "days":  7,
+                                                 "dailyAvgView":  2039.43
+                                             }
+                                         ]
+                   },
+                   {
+                       "bvid":  "BV1QZM16zEMK",
+                       "title":  "8月最新【秋叶ComfyUI-VX中文版】全中文界面支持中文提示词！Win+Mac一键安装，支持20304050显卡解压即用，附comfyui本地部署一键安装包",
+                       "hasData":  true,
+                       "pubdate":  1785974400,
+                       "publishedAt":  "2026-08-06 08:00:00",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  24856,
+                       "reply":  1218,
+                       "like":  1571,
+                       "coin":  2465,
+                       "favorite":  1794,
+                       "share":  208,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  6,
+                       "dailyAvgView":  4142.67,
+                       "rates":  {
+                                     "reply":  4.9002,
+                                     "like":  6.3204,
+                                     "coin":  9.9171,
+                                     "favorite":  7.2176,
+                                     "share":  0.8368
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  24856,
+                                           "reply":  1218,
+                                           "like":  1571,
+                                           "coin":  2465,
+                                           "favorite":  1794,
+                                           "share":  208,
+                                           "danmaku":  85
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  4.9002,
+                                             "like":  6.3204,
+                                             "coin":  9.9171,
+                                             "favorite":  7.2176,
+                                             "share":  0.8368
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  24856,
+                                                 "days":  6,
+                                                 "dailyAvgView":  4142.67
+                                             }
+                                         ]
+                   },
+                   {
+                       "bvid":  "BV1GFVf6sECB",
+                       "title":  "7月最新【秋叶ComfyUI-v10中文版】！全中文界面支持中文提示词！支持50 40 30系显卡，Win+Mac一键安装，解压即用（附Comfyui整合包）",
+                       "hasData":  true,
+                       "pubdate":  1780308932,
+                       "publishedAt":  "2026-06-01 18:15:32",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  376122,
+                       "reply":  19360,
+                       "like":  13704,
+                       "coin":  22099,
+                       "favorite":  15902,
+                       "share":  2299,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  72,
+                       "dailyAvgView":  5223.92,
+                       "rates":  {
+                                     "reply":  5.1473,
+                                     "like":  3.6435,
+                                     "coin":  5.8755,
+                                     "favorite":  4.2279,
+                                     "share":  0.6112
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  376122,
+                                           "reply":  19360,
+                                           "like":  13704,
+                                           "coin":  22099,
+                                           "favorite":  15902,
+                                           "share":  2299,
+                                           "danmaku":  394
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  5.1473,
+                                             "like":  3.6435,
+                                             "coin":  5.8755,
+                                             "favorite":  4.2279,
+                                             "share":  0.6112
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  376122,
+                                                 "days":  72,
+                                                 "dailyAvgView":  5223.92
+                                             }
+                                         ]
+                   },
+                   {
+                       "bvid":  "BV1NfKw6AEeo",
+                       "title":  "8月【秋叶ComfyUI桌面版】全新发布！ai绘画ai视频一键生成，适配20/30/40/50系显卡，Win+Mac一键安装解压即用无私传递（附整合包+工作流）",
+                       "hasData":  true,
+                       "pubdate":  1784355819,
+                       "publishedAt":  "2026-07-18 14:23:39",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  67208,
+                       "reply":  1407,
+                       "like":  2086,
+                       "coin":  3346,
+                       "favorite":  2421,
+                       "share":  659,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  25,
+                       "dailyAvgView":  2688.32,
+                       "rates":  {
+                                     "reply":  2.0935,
+                                     "like":  3.1038,
+                                     "coin":  4.9786,
+                                     "favorite":  3.6022,
+                                     "share":  0.9805
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  67208,
+                                           "reply":  1407,
+                                           "like":  2086,
+                                           "coin":  3346,
+                                           "favorite":  2421,
+                                           "share":  659,
+                                           "danmaku":  176
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  2.0935,
+                                             "like":  3.1038,
+                                             "coin":  4.9786,
+                                             "favorite":  3.6022,
+                                             "share":  0.9805
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  67208,
+                                                 "days":  25,
+                                                 "dailyAvgView":  2688.32
+                                             }
+                                         ]
+                   },
+                   {
+                       "bvid":  "BV1Tjgk6fEQw",
+                       "title":  "【ComfyUI-模型】音画同步，AI视频一键生成，8g显存也能玩。LTX2.3模型完全体！从入门到进阶,镜头运镜,提示词工具。一键安装，点开即用（附软件模型）",
+                       "hasData":  true,
+                       "pubdate":  1784694905,
+                       "publishedAt":  "2026-07-22 12:35:05",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  61516,
+                       "reply":  1628,
+                       "like":  2810,
+                       "coin":  4026,
+                       "favorite":  3218,
+                       "share":  733,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  21,
+                       "dailyAvgView":  2929.33,
+                       "rates":  {
+                                     "reply":  2.6465,
+                                     "like":  4.5679,
+                                     "coin":  6.5446,
+                                     "favorite":  5.2312,
+                                     "share":  1.1916
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  61516,
+                                           "reply":  1628,
+                                           "like":  2810,
+                                           "coin":  4026,
+                                           "favorite":  3218,
+                                           "share":  733,
+                                           "danmaku":  210
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  2.6465,
+                                             "like":  4.5679,
+                                             "coin":  6.5446,
+                                             "favorite":  5.2312,
+                                             "share":  1.1916
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  61516,
+                                                 "days":  21,
+                                                 "dailyAvgView":  2929.33
+                                             }
+                                         ]
+                   },
+                   {
+                       "bvid":  "BV1wfT76GEME",
+                       "title":  "【ComfyUI-V13旗舰版】秋叶最新教程发布！全中文界面，中文提示词！全面适配50 40 30系显卡，Win+Mac一键安装，解压即用，（附整合包+工作流）",
+                       "hasData":  true,
+                       "pubdate":  1782998112,
+                       "publishedAt":  "2026-07-02 21:15:12",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  158585,
+                       "reply":  4866,
+                       "like":  5743,
+                       "coin":  8961,
+                       "favorite":  6880,
+                       "share":  1657,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  41,
+                       "dailyAvgView":  3867.93,
+                       "rates":  {
+                                     "reply":  3.0684,
+                                     "like":  3.6214,
+                                     "coin":  5.6506,
+                                     "favorite":  4.3384,
+                                     "share":  1.0449
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  158585,
+                                           "reply":  4866,
+                                           "like":  5743,
+                                           "coin":  8961,
+                                           "favorite":  6880,
+                                           "share":  1657,
+                                           "danmaku":  340
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  3.0684,
+                                             "like":  3.6214,
+                                             "coin":  5.6506,
+                                             "favorite":  4.3384,
+                                             "share":  1.0449
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  158585,
+                                                 "days":  41,
+                                                 "dailyAvgView":  3867.93
+                                             }
+                                         ]
+                   },
+                   {
+                       "bvid":  "BV18egC6NEPm",
+                       "title":  "【ComfyUI最强视频模型】LTX2.3最新NSFW破限制视频/漫剧一键整合包！无视审查！低至8G显存运行！LTX导演台、多参生视频、Scail2动作迁移等",
+                       "hasData":  true,
+                       "pubdate":  1784717074,
+                       "publishedAt":  "2026-07-22 18:44:34",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  61944,
+                       "reply":  1467,
+                       "like":  1563,
+                       "coin":  2800,
+                       "favorite":  1598,
+                       "share":  670,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  21,
+                       "dailyAvgView":  2949.71,
+                       "rates":  {
+                                     "reply":  2.3683,
+                                     "like":  2.5232,
+                                     "coin":  4.5202,
+                                     "favorite":  2.5797,
+                                     "share":  1.0816
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  61944,
+                                           "reply":  1467,
+                                           "like":  1563,
+                                           "coin":  2800,
+                                           "favorite":  1598,
+                                           "share":  670,
+                                           "danmaku":  116
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  2.3683,
+                                             "like":  2.5232,
+                                             "coin":  4.5202,
+                                             "favorite":  2.5797,
+                                             "share":  1.0816
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  61944,
+                                                 "days":  21,
+                                                 "dailyAvgView":  2949.71
+                                             }
+                                         ]
+                   },
+                   {
+                       "bvid":  "BV1sh3C6cEXN",
+                       "title":  "【秋叶ComfyUI终极整合包】全中文界面支持中文提示词！支持全部英伟达显卡！详细从零开始学习AI绘画comfyui工作流搭建，（附整合包工作流）",
+                       "hasData":  true,
+                       "pubdate":  1785315707,
+                       "publishedAt":  "2026-07-29 17:01:47",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  47397,
+                       "reply":  624,
+                       "like":  901,
+                       "coin":  1626,
+                       "favorite":  925,
+                       "share":  363,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  14,
+                       "dailyAvgView":  3385.5,
+                       "rates":  {
+                                     "reply":  1.3165,
+                                     "like":  1.901,
+                                     "coin":  3.4306,
+                                     "favorite":  1.9516,
+                                     "share":  0.7659
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  47397,
+                                           "reply":  624,
+                                           "like":  901,
+                                           "coin":  1626,
+                                           "favorite":  925,
+                                           "share":  363,
+                                           "danmaku":  78
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  1.3165,
+                                             "like":  1.901,
+                                             "coin":  3.4306,
+                                             "favorite":  1.9516,
+                                             "share":  0.7659
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  47397,
+                                                 "days":  14,
+                                                 "dailyAvgView":  3385.5
+                                             }
+                                         ]
+                   },
+                   {
+                       "bvid":  "BV19wLX61EpR",
+                       "title":  "最新发布！【秋叶ComfyUI-v13】中文整合包来了！支持20/30/40/50系显卡，Win+Mac一键下载安装,AI生图/AI视（附Comfyui整合包）",
+                       "hasData":  true,
+                       "pubdate":  1781694000,
+                       "publishedAt":  "2026-06-17 19:00:00",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  84375,
+                       "reply":  433,
+                       "like":  386,
+                       "coin":  592,
+                       "favorite":  392,
+                       "share":  376,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  56,
+                       "dailyAvgView":  1506.7,
+                       "rates":  {
+                                     "reply":  0.5132,
+                                     "like":  0.4575,
+                                     "coin":  0.7016,
+                                     "favorite":  0.4646,
+                                     "share":  0.4456
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  84375,
+                                           "reply":  433,
+                                           "like":  386,
+                                           "coin":  592,
+                                           "favorite":  392,
+                                           "share":  376,
+                                           "danmaku":  93
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  0.5132,
+                                             "like":  0.4575,
+                                             "coin":  0.7016,
+                                             "favorite":  0.4646,
+                                             "share":  0.4456
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  84375,
+                                                 "days":  56,
+                                                 "dailyAvgView":  1506.7
+                                             }
+                                         ]
+                   },
+                   {
+                       "bvid":  "BV1cbuw6eE16",
+                       "title":  "【秋叶ComfyUI】秋叶最新发布！ComfyUI 中文满血整合包来了！支持50 40 30系显卡，Win+Mac一键下载安装（附新Comfyui整合包）",
+                       "hasData":  true,
+                       "pubdate":  1785825289,
+                       "publishedAt":  "2026-08-04 14:34:49",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  11477,
+                       "reply":  11,
+                       "like":  79,
+                       "coin":  147,
+                       "favorite":  75,
+                       "share":  102,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  8,
+                       "dailyAvgView":  1434.62,
+                       "rates":  {
+                                     "reply":  0.0958,
+                                     "like":  0.6883,
+                                     "coin":  1.2808,
+                                     "favorite":  0.6535,
+                                     "share":  0.8887
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  11477,
+                                           "reply":  11,
+                                           "like":  79,
+                                           "coin":  147,
+                                           "favorite":  75,
+                                           "share":  102,
+                                           "danmaku":  2
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  0.0958,
+                                             "like":  0.6883,
+                                             "coin":  1.2808,
+                                             "favorite":  0.6535,
+                                             "share":  0.8887
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  11477,
+                                                 "days":  8,
+                                                 "dailyAvgView":  1434.62
+                                             }
+                                         ]
+                   },
+                   {
+                       "bvid":  "BV15AdgB4En4",
+                       "title":  "7月24日【 秋叶ComfyUI中文版】重磅更新！！ComfyUI 旗舰整合包来了！，Win+Mac一键下载安装无私分享（附Comfyui整合包）",
+                       "hasData":  true,
+                       "pubdate":  1778241600,
+                       "publishedAt":  "2026-05-08 20:00:00",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  120830,
+                       "reply":  5480,
+                       "like":  11573,
+                       "coin":  20136,
+                       "favorite":  13037,
+                       "share":  1199,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  96,
+                       "dailyAvgView":  1258.65,
+                       "rates":  {
+                                     "reply":  4.5353,
+                                     "like":  9.5779,
+                                     "coin":  16.6647,
+                                     "favorite":  10.7895,
+                                     "share":  0.9923
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  120830,
+                                           "reply":  5480,
+                                           "like":  11573,
+                                           "coin":  20136,
+                                           "favorite":  13037,
+                                           "share":  1199,
+                                           "danmaku":  193
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  4.5353,
+                                             "like":  9.5779,
+                                             "coin":  16.6647,
+                                             "favorite":  10.7895,
+                                             "share":  0.9923
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  120830,
+                                                 "days":  96,
+                                                 "dailyAvgView":  1258.65
+                                             }
+                                         ]
+                   },
+                   {
+                       "bvid":  "BV1g4Ei6KEWJ",
+                       "title":  "【全100集】B站最详细StableDiffusion+Comfyui全套保姆级教程——秋叶零基础入门到精通，全程干货无废话，允许白嫖，拿走不谢！（附SD安装包",
+                       "hasData":  true,
+                       "pubdate":  1781184167,
+                       "publishedAt":  "2026-06-11 21:22:47",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  55124,
+                       "reply":  233,
+                       "like":  246,
+                       "coin":  399,
+                       "favorite":  274,
+                       "share":  231,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  62,
+                       "dailyAvgView":  889.1,
+                       "rates":  {
+                                     "reply":  0.4227,
+                                     "like":  0.4463,
+                                     "coin":  0.7238,
+                                     "favorite":  0.4971,
+                                     "share":  0.4191
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  55124,
+                                           "reply":  233,
+                                           "like":  246,
+                                           "coin":  399,
+                                           "favorite":  274,
+                                           "share":  231,
+                                           "danmaku":  98
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  0.4227,
+                                             "like":  0.4463,
+                                             "coin":  0.7238,
+                                             "favorite":  0.4971,
+                                             "share":  0.4191
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  55124,
+                                                 "days":  62,
+                                                 "dailyAvgView":  889.1
+                                             }
+                                         ]
+                   },
+                   {
+                       "bvid":  "BV15c7h6REzw",
+                       "title":  "【秋叶 ComfyUI】秋叶最新发布！支持20/30/40/50系显卡，ComfyUI V10中文整合包来了！Win+Mac一键安装（附Comfyui整合包）",
+                       "hasData":  true,
+                       "pubdate":  1782376418,
+                       "publishedAt":  "2026-06-25 16:33:38",
+                       "latestTime":  "2026-08-11 02:46:58",
+                       "view":  51311,
+                       "reply":  153,
+                       "like":  157,
+                       "coin":  262,
+                       "favorite":  156,
+                       "share":  134,
+                       "hourlyView":  0,
+                       "todayView":  0,
+                       "days":  48,
+                       "dailyAvgView":  1068.98,
+                       "rates":  {
+                                     "reply":  0.2982,
+                                     "like":  0.306,
+                                     "coin":  0.5106,
+                                     "favorite":  0.304,
+                                     "share":  0.2612
+                                 },
+                       "history":  [
+                                       {
+                                           "time":  "2026-08-11 02:46:58",
+                                           "view":  51311,
+                                           "reply":  153,
+                                           "like":  157,
+                                           "coin":  262,
+                                           "favorite":  156,
+                                           "share":  134,
+                                           "danmaku":  13
+                                       }
+                                   ],
+                       "hourlyDeltas":  [
+
+                                        ],
+                       "rateTrend":  [
+                                         {
+                                             "time":  "2026-08-11 02:46:58",
+                                             "reply":  0.2982,
+                                             "like":  0.306,
+                                             "coin":  0.5106,
+                                             "favorite":  0.304,
+                                             "share":  0.2612
+                                         }
+                                     ],
+                       "dailyAvgTrend":  [
+                                             {
+                                                 "date":  "2026-08-11",
+                                                 "view":  51311,
+                                                 "days":  48,
+                                                 "dailyAvgView":  1068.98
+                                             }
+                                         ]
+                   }
+               ]
+}

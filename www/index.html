@@ -1,0 +1,868 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B站视频数据看板</title>
+<style>
+:root {
+  --bg: #eef1f4;
+  --panel: #ffffff;
+  --ink: #182027;
+  --muted: #5c6873;
+  --line: #d5dbe1;
+  --accent: #0b7f77;
+  --shadow: 0 1px 2px rgba(16, 24, 32, .06);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", "Segoe UI", system-ui, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 20px;
+  background: #111820;
+  color: #f3f6f8;
+  border-bottom: 3px solid var(--accent);
+}
+.brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  flex: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0b8f84, #2f7bd1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.brand h1 { margin: 0; font-size: 18px; line-height: 1.2; font-weight: 700; }
+.meta { margin-top: 3px; font-size: 12px; color: #9fb0bd; }
+.header-actions { display: flex; align-items: center; gap: 10px; flex: none; }
+.status { font-size: 12px; color: #9fb0bd; }
+.icon-btn {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border: 1px solid #2a3741;
+  background: #1b252e;
+  color: #e6edf2;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+.icon-btn:hover { background: #24323d; }
+main { max-width: 1500px; margin: 0 auto; padding: 18px 20px 34px; }
+.summary {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.metric {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  padding: 12px 14px;
+  min-width: 0;
+}
+.metric .label { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.metric .value {
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.search-box { position: relative; display: flex; align-items: center; flex: 1 1 280px; max-width: 420px; }
+.search-box svg { position: absolute; left: 10px; color: var(--muted); pointer-events: none; }
+.search-box input {
+  width: 100%;
+  height: 36px;
+  padding: 0 12px 0 34px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  font-size: 14px;
+  color: var(--ink);
+  outline: none;
+}
+.search-box input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(11, 127, 119, .12); }
+.result-info { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.table-wrap {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+  overflow: auto;
+  max-height: calc(100vh - 260px);
+  min-height: 260px;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  min-width: 1500px;
+  font-size: 13px;
+}
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: #f7f9fa;
+  border-bottom: 1px solid var(--line);
+  padding: 9px 12px;
+  text-align: right;
+  white-space: nowrap;
+  color: #46525c;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+thead th.left, td.left { text-align: left; }
+th .sort-mark { display: inline-block; width: 12px; color: var(--accent); font-weight: 700; }
+th.sorted { color: #0b6f68; }
+tbody td {
+  padding: 9px 12px;
+  border-bottom: 1px solid #e8ebee;
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+tbody tr { cursor: pointer; }
+tbody tr:hover { background: #eefaf7; }
+tbody tr:last-child td { border-bottom: none; }
+td.title {
+  max-width: 340px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+td.bvid { font-family: Consolas, "Courier New", monospace; font-size: 12px; color: #33404b; }
+td.na { color: #a5adb5; }
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 31, .55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 50;
+}
+.modal.hidden { display: none; }
+.modal-panel {
+  background: #fff;
+  width: min(1180px, 100%);
+  max-height: 92vh;
+  border-radius: 8px;
+  overflow: auto;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, .28);
+}
+.modal-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+}
+.modal-head h2 { margin: 0; font-size: 17px; line-height: 1.4; overflow-wrap: anywhere; }
+.modal-meta { margin-top: 6px; font-size: 12px; color: var(--muted); display: flex; gap: 14px; flex-wrap: wrap; }
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  padding: 18px 20px 22px;
+}
+.chart-section {
+  grid-column: 1 / -1;
+  margin-top: 6px;
+  padding: 10px 2px 8px;
+  border-bottom: 2px solid var(--line);
+  font-size: 14px;
+  font-weight: 700;
+  color: #28323c;
+}
+.chart-section:first-child { margin-top: 0; }
+.chart-card {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fbfcfd;
+  overflow: hidden;
+  min-width: 0;
+}
+.chart-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  font-weight: 600;
+  font-size: 13px;
+  border-bottom: 1px solid #e8ebee;
+}
+.chart-dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.chart-body { position: relative; height: 230px; }
+.chart-body canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.chart-tip {
+  position: absolute;
+  pointer-events: none;
+  background: #111820;
+  color: #fff;
+  font-size: 11px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(-50%, -120%);
+  z-index: 3;
+}
+@media (max-width: 1100px) {
+  .summary { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  header { padding: 10px 14px; }
+  main { padding: 14px 12px 28px; }
+  .summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .search-box { max-width: none; }
+  .modal { padding: 10px; }
+  .chart-grid { grid-template-columns: 1fr; padding: 14px 12px 18px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 3v18h18"></path>
+        <path d="M7 14l3-4 3 3 4-6"></path>
+      </svg>
+    </div>
+    <div>
+      <h1>B站视频数据看板</h1>
+      <div class="meta">数据更新 <span id="updatedAt">--</span></div>
+    </div>
+  </div>
+  <div class="header-actions">
+    <span class="status" id="statusText">就绪</span>
+    <button id="refreshBtn" class="icon-btn" type="button" title="立即刷新" aria-label="立即刷新">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12a9 9 0 1 1-2.64-6.36"></path>
+        <path d="M21 3v6h-6"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+<main>
+  <section id="summary" class="summary" aria-label="总览"></section>
+  <section class="toolbar" aria-label="工具栏">
+    <div class="search-box">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="7"></circle>
+        <path d="m21 21-4.3-4.3"></path>
+      </svg>
+      <input id="searchInput" type="search" placeholder="搜索BV号或标题" autocomplete="off">
+    </div>
+    <div class="result-info" id="resultInfo"></div>
+  </section>
+  <section class="table-wrap" aria-label="视频数据表">
+    <table>
+      <thead>
+        <tr>
+          <th class="left sortable" data-key="bvid">BV号<span class="sort-mark"></span></th>
+          <th class="left sortable" data-key="title">标题<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="view">播放<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="reply">评论<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="like">点赞<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="coin">投币<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="favorite">收藏<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="share">分享<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="hourlyView">本小时播放<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="todayView">今日播放<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="days">已发布天数<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="dailyAvgView">日均播放<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="rateReply">评论率<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="rateLike">点赞率<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="rateCoin">投币率<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="rateFavorite">收藏率<span class="sort-mark"></span></th>
+          <th class="sortable" data-key="rateShare">分享率<span class="sort-mark"></span></th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </section>
+</main>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-label="视频趋势">
+  <div class="modal-panel">
+    <div class="modal-head">
+      <div style="min-width:0">
+        <h2 id="modalTitle"></h2>
+        <div class="modal-meta" id="modalMeta"></div>
+      </div>
+      <button id="modalClose" class="icon-btn" type="button" title="关闭" aria-label="关闭">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="chartGrid" class="chart-grid"></div>
+  </div>
+</div>
+<script>
+const state = {
+  data: null,
+  sortKey: null,
+  sortDir: 1,
+  query: '',
+  charts: []
+};
+
+const $ = id => document.getElementById(id);
+
+function esc(value) {
+  return String(value).replace(/[&<>"']/g, ch => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[ch]));
+}
+
+function fmtInt(value) {
+  if (value === null || value === undefined || Number.isNaN(Number(value))) return '—';
+  return Math.round(Number(value)).toLocaleString('zh-CN');
+}
+
+function fmtRate(value) {
+  if (value === null || value === undefined || Number.isNaN(Number(value))) return '—';
+  return Number(value).toFixed(2) + '%';
+}
+
+function fmtAxis(value) {
+  const n = Number(value);
+  if (Math.abs(n) >= 100000000) return (n / 100000000).toFixed(1) + '亿';
+  if (Math.abs(n) >= 10000) return (n / 10000).toFixed(1) + '万';
+  return String(Math.round(n));
+}
+
+function fmtRateAxis(value) {
+  return Number(value).toFixed(2) + '%';
+}
+
+function shortTime(value) {
+  const text = String(value || '');
+  const m = text.match(/^(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})/);
+  if (m) return m[2] + '-' + m[3] + ' ' + m[4] + ':' + m[5];
+  const d = text.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (d) return d[2] + '-' + d[3];
+  return text;
+}
+
+function flatten(video) {
+  const r = video.rates || {};
+  return {
+    bvid: video.bvid,
+    title: video.title || '',
+    hasData: !!video.hasData,
+    view: video.view || 0,
+    reply: video.reply || 0,
+    like: video.like || 0,
+    coin: video.coin || 0,
+    favorite: video.favorite || 0,
+    share: video.share || 0,
+    hourlyView: video.hourlyView || 0,
+    todayView: video.todayView || 0,
+    days: video.days || 0,
+    dailyAvgView: video.dailyAvgView || 0,
+    rateReply: r.reply || 0,
+    rateLike: r.like || 0,
+    rateCoin: r.coin || 0,
+    rateFavorite: r.favorite || 0,
+    rateShare: r.share || 0,
+    video: video
+  };
+}
+
+function renderSummary() {
+  if (!state.data) return;
+  const s = state.data.summary || {};
+  const items = [
+    ['视频数', fmtInt(s.videoCount)],
+    ['总播放', fmtInt(s.totalView)],
+    ['总评论', fmtInt(s.totalReply)],
+    ['平均评论率', fmtRate(s.avgReplyRate)],
+    ['平均点赞率', fmtRate(s.avgLikeRate)],
+    ['平均投币率', fmtRate(s.avgCoinRate)],
+    ['平均收藏率', fmtRate(s.avgFavoriteRate)],
+    ['平均分享率', fmtRate(s.avgShareRate)]
+  ];
+  $('summary').innerHTML = items.map(item =>
+    '<div class="metric"><div class="label">' + item[0] + '</div><div class="value">' + item[1] + '</div></div>'
+  ).join('');
+}
+
+function cell(value, hasData) {
+  return hasData ? '<td>' + value + '</td>' : '<td class="na">—</td>';
+}
+
+function renderTable() {
+  if (!state.data) return;
+  const videos = state.data.videos || [];
+  let rows = videos.map(flatten);
+  const q = state.query.trim().toLowerCase();
+  if (q) {
+    rows = rows.filter(row =>
+      row.bvid.toLowerCase().indexOf(q) >= 0 || row.title.toLowerCase().indexOf(q) >= 0
+    );
+  }
+  if (state.sortKey) {
+    const key = state.sortKey;
+    const dir = state.sortDir;
+    rows.sort((a, b) => {
+      const va = a[key];
+      const vb = b[key];
+      if (key === 'bvid' || key === 'title') {
+        return String(va).localeCompare(String(vb), 'zh-CN') * dir;
+      }
+      return (Number(va) - Number(vb)) * dir;
+    });
+  }
+
+  $('resultInfo').textContent = rows.length + ' / ' + videos.length;
+  const tbody = $('tableBody');
+  tbody.innerHTML = '';
+
+  rows.forEach(row => {
+    const tr = document.createElement('tr');
+    tr.innerHTML =
+      '<td class="bvid">' + esc(row.bvid) + '</td>' +
+      '<td class="title" title="' + esc(row.title) + '">' + esc(row.title) + '</td>' +
+      cell(fmtInt(row.view), row.hasData) +
+      cell(fmtInt(row.reply), row.hasData) +
+      cell(fmtInt(row.like), row.hasData) +
+      cell(fmtInt(row.coin), row.hasData) +
+      cell(fmtInt(row.favorite), row.hasData) +
+      cell(fmtInt(row.share), row.hasData) +
+      cell(fmtInt(row.hourlyView), row.hasData) +
+      cell(fmtInt(row.todayView), row.hasData) +
+      cell(fmtInt(row.days), row.hasData) +
+      cell(fmtInt(row.dailyAvgView), row.hasData) +
+      cell(fmtRate(row.rateReply), row.hasData) +
+      cell(fmtRate(row.rateLike), row.hasData) +
+      cell(fmtRate(row.rateCoin), row.hasData) +
+      cell(fmtRate(row.rateFavorite), row.hasData) +
+      cell(fmtRate(row.rateShare), row.hasData);
+    tr.addEventListener('click', () => openModal(row.video));
+    tbody.appendChild(tr);
+  });
+
+  updateSortMarks();
+}
+
+function updateSortMarks() {
+  document.querySelectorAll('th.sortable').forEach(th => {
+    const mark = th.querySelector('.sort-mark');
+    const key = th.dataset.key;
+    const active = state.sortKey === key;
+    th.classList.toggle('sorted', active);
+    mark.textContent = active ? (state.sortDir === 1 ? '↑' : '↓') : '';
+  });
+}
+
+const cumulativeDefs = [
+  { label: '播放', key: 'view', color: '#2563eb' },
+  { label: '评论', key: 'reply', color: '#d97706' },
+  { label: '点赞', key: 'like', color: '#059669' },
+  { label: '投币', key: 'coin', color: '#dc2626' },
+  { label: '收藏', key: 'favorite', color: '#7c3aed' },
+  { label: '分享', key: 'share', color: '#0891b2' }
+];
+
+const hourlyDefs = cumulativeDefs.map(def => ({
+  label: def.label,
+  key: def.key,
+  color: def.color,
+  source: 'hourlyDeltas'
+}));
+
+const rateDefs = [
+  { label: '评论率', key: 'reply', color: '#d97706', source: 'rateTrend', rate: true },
+  { label: '点赞率', key: 'like', color: '#059669', source: 'rateTrend', rate: true },
+  { label: '投币率', key: 'coin', color: '#dc2626', source: 'rateTrend', rate: true },
+  { label: '收藏率', key: 'favorite', color: '#7c3aed', source: 'rateTrend', rate: true },
+  { label: '分享率', key: 'share', color: '#0891b2', source: 'rateTrend', rate: true }
+];
+
+const chartGroups = [
+  { title: '累计值', defs: cumulativeDefs },
+  { title: '每小时新增', defs: hourlyDefs },
+  { title: '每小时变化率', defs: rateDefs },
+  {
+    title: '日均播放按天',
+    defs: [{ label: '日均播放', key: 'dailyAvgView', color: '#0e7490', source: 'dailyAvgTrend' }]
+  }
+];
+
+function openModal(video) {
+  if (!video) return;
+  $('modalTitle').textContent = video.title || video.bvid;
+  $('modalMeta').innerHTML =
+    '<span>' + esc(video.bvid) + '</span>' +
+    '<span>已发布 ' + (video.hasData ? fmtInt(video.days) : '—') + ' 天</span>' +
+    '<span>更新 ' + esc(video.latestTime || '—') + '</span>';
+
+  const grid = $('chartGrid');
+  grid.innerHTML = '';
+  state.charts = [];
+
+  chartGroups.forEach(group => {
+    const header = document.createElement('div');
+    header.className = 'chart-section';
+    header.textContent = group.title;
+    grid.appendChild(header);
+
+    group.defs.forEach(def => {
+      const card = document.createElement('div');
+      card.className = 'chart-card';
+      card.innerHTML =
+        '<div class="chart-head"><span class="chart-dot" style="background:' + def.color + '"></span><span>' + def.label + '</span></div>' +
+        '<div class="chart-body"><canvas></canvas><div class="chart-tip"></div></div>';
+      grid.appendChild(card);
+    });
+  });
+
+  $('modal').classList.remove('hidden');
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      const cards = grid.querySelectorAll('.chart-card');
+      const allDefs = chartGroups.reduce((acc, group) => acc.concat(group.defs), []);
+      allDefs.forEach((def, index) => {
+        const canvas = cards[index].querySelector('canvas');
+        const tip = cards[index].querySelector('.chart-tip');
+        bindChart(canvas, tip, def, video);
+      });
+    });
+  });
+}
+
+function getTrendPoints(video, def) {
+  const source = def.source || 'history';
+  let items = video[source];
+  if (source === 'hourlyDeltas' && !Array.isArray(items)) {
+    items = computeHourlyDeltas(video.history || []);
+  } else if (source === 'rateTrend' && !Array.isArray(items)) {
+    items = computeRateTrend(video.history || []);
+  } else if (source === 'dailyAvgTrend' && !Array.isArray(items)) {
+    items = computeDailyAvgTrend(video.history || [], video.pubdate);
+  }
+  if (!Array.isArray(items)) items = [];
+  return items.map(item => ({
+    time: item.time || item.date || '',
+    value: Number(item[def.key]) || 0
+  }));
+}
+
+function computeHourlyDeltas(history) {
+  const out = [];
+  for (let i = 1; i < history.length; i++) {
+    const prev = history[i - 1];
+    const cur = history[i];
+    out.push({
+      time: cur.time,
+      view: Math.max(0, Number(cur.view) - Number(prev.view)),
+      reply: Math.max(0, Number(cur.reply) - Number(prev.reply)),
+      like: Math.max(0, Number(cur.like) - Number(prev.like)),
+      coin: Math.max(0, Number(cur.coin) - Number(prev.coin)),
+      favorite: Math.max(0, Number(cur.favorite) - Number(prev.favorite)),
+      share: Math.max(0, Number(cur.share) - Number(prev.share))
+    });
+  }
+  return out;
+}
+
+function computeRateTrend(history) {
+  return history.map(h => {
+    const v = Number(h.view) || 0;
+    const rate = key => v > 0 ? 100 * Number(h[key]) / v : 0;
+    return {
+      time: h.time,
+      reply: rate('reply'),
+      like: rate('like'),
+      coin: rate('coin'),
+      favorite: rate('favorite'),
+      share: rate('share')
+    };
+  });
+}
+
+function computeDailyAvgTrend(history, pubdate) {
+  const byDate = {};
+  const order = [];
+  const dayMs = 86400000;
+  let pubLocal = null;
+  if (pubdate) {
+    const pub = new Date(Number(pubdate) * 1000);
+    pubLocal = new Date(pub.getFullYear(), pub.getMonth(), pub.getDate());
+  }
+  history.forEach(h => {
+    const date = String(h.time || '').substring(0, 10);
+    if (!date) return;
+    let days = 1;
+    if (pubLocal) {
+      const parts = date.split('-').map(Number);
+      const cur = new Date(parts[0], parts[1] - 1, parts[2]);
+      days = Math.max(1, Math.round((cur - pubLocal) / dayMs) + 1);
+    }
+    byDate[date] = {
+      date: date,
+      view: Number(h.view) || 0,
+      days: days,
+      dailyAvgView: (Number(h.view) || 0) / days
+    };
+    if (order.indexOf(date) < 0) order.push(date);
+  });
+  return order.map(date => byDate[date]);
+}
+
+function bindChart(canvas, tip, def, video) {
+  const points = getTrendPoints(video, def);
+  const formatValue = def.rate ? fmtRate : fmtInt;
+  const formatAxis = def.rate ? fmtRateAxis : fmtAxis;
+  let hoverIndex = -1;
+
+  function draw() {
+    const dpr = window.devicePixelRatio || 1;
+    const w = canvas.clientWidth || canvas.parentElement.clientWidth || 300;
+    const h = canvas.clientHeight || canvas.parentElement.clientHeight || 230;
+    canvas.width = Math.max(1, Math.round(w * dpr));
+    canvas.height = Math.max(1, Math.round(h * dpr));
+    const ctx = canvas.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, w, h);
+
+    const padL = 46;
+    const padR = 14;
+    const padT = 14;
+    const padB = 28;
+    const plotW = w - padL - padR;
+    const plotH = h - padT - padB;
+
+    if (!points.length) {
+      ctx.fillStyle = '#8a939c';
+      ctx.font = '12px "Microsoft YaHei", sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('暂无数据', w / 2, h / 2);
+      tip.style.opacity = '0';
+      return;
+    }
+
+    const values = points.map(p => p.value);
+    let max = Math.max.apply(null, values);
+    let min = Math.min.apply(null, values);
+    if (max === min) {
+      max = min + 1;
+      if (min === 0) min = -1;
+    }
+    const span = max - min;
+    const xAt = i => padL + plotW * (points.length === 1 ? 0.5 : i / (points.length - 1));
+    const yAt = value => padT + plotH * (1 - (value - min) / span);
+
+    ctx.strokeStyle = '#e4e8ec';
+    ctx.fillStyle = '#6b7680';
+    ctx.font = '10px "Microsoft YaHei", sans-serif';
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
+    for (let g = 0; g <= 4; g++) {
+      const gy = padT + plotH * g / 4;
+      const value = max - span * g / 4;
+      ctx.beginPath();
+      ctx.moveTo(padL, gy);
+      ctx.lineTo(w - padR, gy);
+      ctx.stroke();
+      ctx.fillText(formatAxis(value), padL - 6, gy);
+    }
+
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+    ctx.fillStyle = '#6b7680';
+    ctx.fillText(shortTime(points[0].time), padL, padT + plotH + 8);
+    if (points.length > 1) {
+      ctx.textAlign = 'right';
+      ctx.fillText(shortTime(points[points.length - 1].time), w - padR, padT + plotH + 8);
+    }
+
+    ctx.beginPath();
+    points.forEach((p, i) => {
+      const px = xAt(i);
+      const py = yAt(p.value);
+      if (i === 0) ctx.moveTo(px, py);
+      else ctx.lineTo(px, py);
+    });
+    ctx.strokeStyle = def.color;
+    ctx.lineWidth = 2;
+    ctx.lineJoin = 'round';
+    ctx.lineCap = 'round';
+    ctx.stroke();
+
+    const gradient = ctx.createLinearGradient(0, padT, 0, padT + plotH);
+    gradient.addColorStop(0, def.color + '40');
+    gradient.addColorStop(1, def.color + '00');
+    ctx.beginPath();
+    points.forEach((p, i) => {
+      const px = xAt(i);
+      const py = yAt(p.value);
+      if (i === 0) ctx.moveTo(px, py);
+      else ctx.lineTo(px, py);
+    });
+    ctx.lineTo(xAt(points.length - 1), padT + plotH);
+    ctx.lineTo(xAt(0), padT + plotH);
+    ctx.closePath();
+    ctx.fillStyle = gradient;
+    ctx.fill();
+
+    if (points.length <= 48) {
+      points.forEach((p, i) => {
+        ctx.beginPath();
+        ctx.arc(xAt(i), yAt(p.value), 2.5, 0, Math.PI * 2);
+        ctx.fillStyle = def.color;
+        ctx.fill();
+      });
+    }
+
+    if (hoverIndex >= 0 && hoverIndex < points.length) {
+      const hx = xAt(hoverIndex);
+      const hy = yAt(points[hoverIndex].value);
+      ctx.beginPath();
+      ctx.arc(hx, hy, 4.5, 0, Math.PI * 2);
+      ctx.fillStyle = def.color;
+      ctx.strokeStyle = '#ffffff';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      ctx.fill();
+      tip.style.left = hx + 'px';
+      tip.style.top = hy + 'px';
+      tip.style.opacity = '1';
+      tip.textContent = points[hoverIndex].time + ' · ' + formatValue(points[hoverIndex].value);
+    } else {
+      tip.style.opacity = '0';
+    }
+  }
+
+  canvas.addEventListener('mousemove', event => {
+    const rect = canvas.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    if (points.length === 0) {
+      hoverIndex = -1;
+    } else if (points.length === 1) {
+      hoverIndex = 0;
+    } else {
+      const ratio = (x - 46) / (rect.width - 46 - 14);
+      hoverIndex = Math.max(0, Math.min(points.length - 1, Math.round(ratio * (points.length - 1))));
+    }
+    draw();
+  });
+
+  canvas.addEventListener('mouseleave', () => {
+    hoverIndex = -1;
+    draw();
+  });
+
+  state.charts.push(draw);
+  draw();
+}
+
+function closeModal() {
+  $('modal').classList.add('hidden');
+  state.charts = [];
+}
+
+function openVideoByQuery() {
+  const bvid = new URLSearchParams(location.search).get('open');
+  if (!bvid || !state.data || !$('modal').classList.contains('hidden')) return;
+  const video = (state.data.videos || []).find(item => item.bvid === bvid);
+  if (video) openModal(video);
+}
+
+async function loadData() {
+  try {
+    const response = await fetch('data.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    state.data = await response.json();
+    $('updatedAt').textContent = state.data.updatedAt || '—';
+    $('statusText').textContent = '正常';
+    renderSummary();
+    renderTable();
+    openVideoByQuery();
+  } catch (error) {
+    $('statusText').textContent = '加载失败';
+  }
+}
+
+document.querySelectorAll('th.sortable').forEach(th => {
+  th.addEventListener('click', () => {
+    const key = th.dataset.key;
+    if (state.sortKey === key) {
+      state.sortDir *= -1;
+    } else {
+      state.sortKey = key;
+      state.sortDir = -1;
+    }
+    renderTable();
+  });
+});
+
+$('searchInput').addEventListener('input', event => {
+  state.query = event.target.value;
+  renderTable();
+});
+
+$('refreshBtn').addEventListener('click', () => {
+  $('statusText').textContent = '刷新中';
+  loadData();
+});
+
+$('modalClose').addEventListener('click', closeModal);
+$('modal').addEventListener('click', event => {
+  if (event.target.id === 'modal') closeModal();
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') closeModal();
+});
+window.addEventListener('resize', () => {
+  requestAnimationFrame(() => state.charts.forEach(fn => fn()));
+});
+
+loadData();
+setInterval(loadData, 60000);
+</script>
+</body>
+</html>
