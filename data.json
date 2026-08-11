@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11 19:34:24",
+  "updatedAt": "2026-08-11 23:32:13",
   "source": "https://api.bilibili.com/x/web-interface/view",
   "order": [
     "BV1o9uy6jEyM",
@@ -19,13 +19,13 @@
   ],
   "summary": {
     "videoCount": 14,
-    "totalView": 1156913,
-    "totalReply": 37785,
-    "avgReplyRate": 2.2373,
-    "avgLikeRate": 3.6476,
-    "avgCoinRate": 6.2345,
-    "avgFavoriteRate": 3.9949,
-    "avgShareRate": 0.8019
+    "totalView": 1163429,
+    "totalReply": 37881,
+    "avgReplyRate": 2.2058,
+    "avgLikeRate": 3.5742,
+    "avgCoinRate": 6.0876,
+    "avgFavoriteRate": 3.9125,
+    "avgShareRate": 0.7891
   },
   "videos": [
     {
@@ -34,23 +34,23 @@
       "hasData": true,
       "pubdate": 1786262763,
       "publishedAt": "2026-08-09 16:06:03",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 8306,
-      "reply": 192,
-      "like": 447,
-      "coin": 839,
-      "favorite": 471,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 10334,
+      "reply": 216,
+      "like": 486,
+      "coin": 897,
+      "favorite": 508,
       "share": 45,
-      "hourlyView": 130,
-      "todayView": 2411,
+      "hourlyView": 2028,
+      "todayView": 4439,
       "days": 3,
-      "dailyAvgView": 2768.67,
+      "dailyAvgView": 3444.67,
       "rates": {
-        "reply": 2.3116,
-        "like": 5.3817,
-        "coin": 10.1011,
-        "favorite": 5.6706,
-        "share": 0.5418
+        "reply": 2.0902,
+        "like": 4.7029,
+        "coin": 8.6801,
+        "favorite": 4.9158,
+        "share": 0.4355
       },
       "history": [
         {
@@ -102,6 +102,16 @@
           "favorite": 471,
           "share": 45,
           "danmaku": 12
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 10334,
+          "reply": 216,
+          "like": 486,
+          "coin": 897,
+          "favorite": 508,
+          "share": 45,
+          "danmaku": 13
         }
       ],
       "hourlyDeltas": [
@@ -140,6 +150,15 @@
           "coin": 128,
           "favorite": 73,
           "share": 23
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 2028,
+          "reply": 24,
+          "like": 39,
+          "coin": 58,
+          "favorite": 37,
+          "share": 0
         }
       ],
       "rateTrend": [
@@ -182,14 +201,22 @@
           "coin": 10.1011,
           "favorite": 5.6706,
           "share": 0.5418
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 2.0902,
+          "like": 4.7029,
+          "coin": 8.6801,
+          "favorite": 4.9158,
+          "share": 0.4355
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 8306,
+          "view": 10334,
           "days": 3,
-          "dailyAvgView": 2768.67
+          "dailyAvgView": 3444.67
         }
       ]
     },
@@ -199,23 +226,23 @@
       "hasData": true,
       "pubdate": 1785908170,
       "publishedAt": "2026-08-05 13:36:10",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 14394,
-      "reply": 301,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 14449,
+      "reply": 303,
       "like": 1373,
       "coin": 2588,
       "favorite": 1384,
       "share": 185,
-      "hourlyView": 23,
-      "todayView": 118,
+      "hourlyView": 55,
+      "todayView": 173,
       "days": 7,
-      "dailyAvgView": 2056.29,
+      "dailyAvgView": 2064.14,
       "rates": {
-        "reply": 2.0911,
-        "like": 9.5387,
-        "coin": 17.9797,
-        "favorite": 9.6151,
-        "share": 1.2853
+        "reply": 2.097,
+        "like": 9.5024,
+        "coin": 17.9113,
+        "favorite": 9.5785,
+        "share": 1.2804
       },
       "history": [
         {
@@ -267,6 +294,16 @@
           "favorite": 1384,
           "share": 185,
           "danmaku": 91
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 14449,
+          "reply": 303,
+          "like": 1373,
+          "coin": 2588,
+          "favorite": 1384,
+          "share": 185,
+          "danmaku": 92
         }
       ],
       "hourlyDeltas": [
@@ -305,6 +342,15 @@
           "coin": 48,
           "favorite": 24,
           "share": 22
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 55,
+          "reply": 2,
+          "like": 0,
+          "coin": 0,
+          "favorite": 0,
+          "share": 0
         }
       ],
       "rateTrend": [
@@ -347,14 +393,22 @@
           "coin": 17.9797,
           "favorite": 9.6151,
           "share": 1.2853
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 2.097,
+          "like": 9.5024,
+          "coin": 17.9113,
+          "favorite": 9.5785,
+          "share": 1.2804
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 14394,
+          "view": 14449,
           "days": 7,
-          "dailyAvgView": 2056.29
+          "dailyAvgView": 2064.14
         }
       ]
     },
@@ -364,23 +418,23 @@
       "hasData": true,
       "pubdate": 1785974400,
       "publishedAt": "2026-08-06 08:00:00",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 35341,
-      "reply": 1569,
-      "like": 1881,
-      "coin": 2957,
-      "favorite": 2132,
-      "share": 237,
-      "hourlyView": 487,
-      "todayView": 10485,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 38358,
+      "reply": 1629,
+      "like": 1944,
+      "coin": 3029,
+      "favorite": 2196,
+      "share": 238,
+      "hourlyView": 3017,
+      "todayView": 13502,
       "days": 6,
-      "dailyAvgView": 5890.17,
+      "dailyAvgView": 6393.0,
       "rates": {
-        "reply": 4.4396,
-        "like": 5.3224,
-        "coin": 8.3671,
-        "favorite": 6.0327,
-        "share": 0.6706
+        "reply": 4.2468,
+        "like": 5.068,
+        "coin": 7.8967,
+        "favorite": 5.725,
+        "share": 0.6205
       },
       "history": [
         {
@@ -432,6 +486,16 @@
           "favorite": 2132,
           "share": 237,
           "danmaku": 90
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 38358,
+          "reply": 1629,
+          "like": 1944,
+          "coin": 3029,
+          "favorite": 2196,
+          "share": 238,
+          "danmaku": 90
         }
       ],
       "hourlyDeltas": [
@@ -470,6 +534,15 @@
           "coin": 146,
           "favorite": 88,
           "share": 23
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 3017,
+          "reply": 60,
+          "like": 63,
+          "coin": 72,
+          "favorite": 64,
+          "share": 1
         }
       ],
       "rateTrend": [
@@ -512,14 +585,22 @@
           "coin": 8.3671,
           "favorite": 6.0327,
           "share": 0.6706
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 4.2468,
+          "like": 5.068,
+          "coin": 7.8967,
+          "favorite": 5.725,
+          "share": 0.6205
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 35341,
+          "view": 38358,
           "days": 6,
-          "dailyAvgView": 5890.17
+          "dailyAvgView": 6393.0
         }
       ]
     },
@@ -529,23 +610,23 @@
       "hasData": true,
       "pubdate": 1780308932,
       "publishedAt": "2026-06-01 18:15:32",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 376302,
-      "reply": 19381,
-      "like": 13711,
-      "coin": 22106,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 376356,
+      "reply": 19383,
+      "like": 13713,
+      "coin": 22108,
       "favorite": 15907,
       "share": 2321,
-      "hourlyView": 41,
-      "todayView": 180,
+      "hourlyView": 54,
+      "todayView": 234,
       "days": 72,
-      "dailyAvgView": 5226.42,
+      "dailyAvgView": 5227.17,
       "rates": {
-        "reply": 5.1504,
+        "reply": 5.1502,
         "like": 3.6436,
-        "coin": 5.8745,
-        "favorite": 4.2272,
-        "share": 0.6168
+        "coin": 5.8742,
+        "favorite": 4.2266,
+        "share": 0.6167
       },
       "history": [
         {
@@ -597,6 +678,16 @@
           "favorite": 15907,
           "share": 2321,
           "danmaku": 394
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 376356,
+          "reply": 19383,
+          "like": 13713,
+          "coin": 22108,
+          "favorite": 15907,
+          "share": 2321,
+          "danmaku": 394
         }
       ],
       "hourlyDeltas": [
@@ -635,6 +726,15 @@
           "coin": 2,
           "favorite": 1,
           "share": 22
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 54,
+          "reply": 2,
+          "like": 2,
+          "coin": 2,
+          "favorite": 0,
+          "share": 0
         }
       ],
       "rateTrend": [
@@ -677,14 +777,22 @@
           "coin": 5.8745,
           "favorite": 4.2272,
           "share": 0.6168
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 5.1502,
+          "like": 3.6436,
+          "coin": 5.8742,
+          "favorite": 4.2266,
+          "share": 0.6167
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 376302,
+          "view": 376356,
           "days": 72,
-          "dailyAvgView": 5226.42
+          "dailyAvgView": 5227.17
         }
       ]
     },
@@ -694,23 +802,23 @@
       "hasData": true,
       "pubdate": 1784355819,
       "publishedAt": "2026-07-18 14:23:39",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 69426,
-      "reply": 1400,
-      "like": 2131,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 70466,
+      "reply": 1402,
+      "like": 2133,
       "coin": 3430,
-      "favorite": 2471,
+      "favorite": 2475,
       "share": 681,
-      "hourlyView": 27,
-      "todayView": 2218,
+      "hourlyView": 1040,
+      "todayView": 3258,
       "days": 25,
-      "dailyAvgView": 2777.04,
+      "dailyAvgView": 2818.64,
       "rates": {
-        "reply": 2.0165,
-        "like": 3.0695,
-        "coin": 4.9405,
-        "favorite": 3.5592,
-        "share": 0.9809
+        "reply": 1.9896,
+        "like": 3.027,
+        "coin": 4.8676,
+        "favorite": 3.5123,
+        "share": 0.9664
       },
       "history": [
         {
@@ -762,6 +870,16 @@
           "favorite": 2471,
           "share": 681,
           "danmaku": 175
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 70466,
+          "reply": 1402,
+          "like": 2133,
+          "coin": 3430,
+          "favorite": 2475,
+          "share": 681,
+          "danmaku": 176
         }
       ],
       "hourlyDeltas": [
@@ -800,6 +918,15 @@
           "coin": 0,
           "favorite": 1,
           "share": 22
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 1040,
+          "reply": 2,
+          "like": 2,
+          "coin": 0,
+          "favorite": 4,
+          "share": 0
         }
       ],
       "rateTrend": [
@@ -842,14 +969,22 @@
           "coin": 4.9405,
           "favorite": 3.5592,
           "share": 0.9809
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 1.9896,
+          "like": 3.027,
+          "coin": 4.8676,
+          "favorite": 3.5123,
+          "share": 0.9664
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 69426,
+          "view": 70466,
           "days": 25,
-          "dailyAvgView": 2777.04
+          "dailyAvgView": 2818.64
         }
       ]
     },
@@ -859,23 +994,23 @@
       "hasData": true,
       "pubdate": 1784694905,
       "publishedAt": "2026-07-22 12:35:05",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 61807,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 62017,
       "reply": 1655,
-      "like": 2831,
-      "coin": 4042,
-      "favorite": 3244,
+      "like": 2833,
+      "coin": 4044,
+      "favorite": 3251,
       "share": 755,
-      "hourlyView": 58,
-      "todayView": 291,
+      "hourlyView": 210,
+      "todayView": 501,
       "days": 21,
-      "dailyAvgView": 2943.19,
+      "dailyAvgView": 2953.19,
       "rates": {
-        "reply": 2.6777,
-        "like": 4.5804,
-        "coin": 6.5397,
-        "favorite": 5.2486,
-        "share": 1.2215
+        "reply": 2.6686,
+        "like": 4.5681,
+        "coin": 6.5208,
+        "favorite": 5.2421,
+        "share": 1.2174
       },
       "history": [
         {
@@ -927,6 +1062,16 @@
           "favorite": 3244,
           "share": 755,
           "danmaku": 209
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 62017,
+          "reply": 1655,
+          "like": 2833,
+          "coin": 4044,
+          "favorite": 3251,
+          "share": 755,
+          "danmaku": 209
         }
       ],
       "hourlyDeltas": [
@@ -965,6 +1110,15 @@
           "coin": 4,
           "favorite": 6,
           "share": 22
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 210,
+          "reply": 0,
+          "like": 2,
+          "coin": 2,
+          "favorite": 7,
+          "share": 0
         }
       ],
       "rateTrend": [
@@ -1007,14 +1161,22 @@
           "coin": 6.5397,
           "favorite": 5.2486,
           "share": 1.2215
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 2.6686,
+          "like": 4.5681,
+          "coin": 6.5208,
+          "favorite": 5.2421,
+          "share": 1.2174
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 61807,
+          "view": 62017,
           "days": 21,
-          "dailyAvgView": 2943.19
+          "dailyAvgView": 2953.19
         }
       ]
     },
@@ -1024,23 +1186,23 @@
       "hasData": true,
       "pubdate": 1782998112,
       "publishedAt": "2026-07-02 21:15:12",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 158789,
-      "reply": 4876,
-      "like": 5746,
-      "coin": 8963,
-      "favorite": 6887,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 158847,
+      "reply": 4880,
+      "like": 5747,
+      "coin": 8965,
+      "favorite": 6892,
       "share": 1679,
-      "hourlyView": 32,
-      "todayView": 204,
+      "hourlyView": 58,
+      "todayView": 262,
       "days": 41,
-      "dailyAvgView": 3872.9,
+      "dailyAvgView": 3874.32,
       "rates": {
-        "reply": 3.0707,
-        "like": 3.6186,
-        "coin": 5.6446,
-        "favorite": 4.3372,
-        "share": 1.0574
+        "reply": 3.0721,
+        "like": 3.6179,
+        "coin": 5.6438,
+        "favorite": 4.3388,
+        "share": 1.057
       },
       "history": [
         {
@@ -1092,6 +1254,16 @@
           "favorite": 6887,
           "share": 1679,
           "danmaku": 340
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 158847,
+          "reply": 4880,
+          "like": 5747,
+          "coin": 8965,
+          "favorite": 6892,
+          "share": 1679,
+          "danmaku": 340
         }
       ],
       "hourlyDeltas": [
@@ -1130,6 +1302,15 @@
           "coin": 0,
           "favorite": 1,
           "share": 22
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 58,
+          "reply": 4,
+          "like": 1,
+          "coin": 2,
+          "favorite": 5,
+          "share": 0
         }
       ],
       "rateTrend": [
@@ -1172,14 +1353,22 @@
           "coin": 5.6446,
           "favorite": 4.3372,
           "share": 1.0574
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 3.0721,
+          "like": 3.6179,
+          "coin": 5.6438,
+          "favorite": 4.3388,
+          "share": 1.057
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 158789,
+          "view": 158847,
           "days": 41,
-          "dailyAvgView": 3872.9
+          "dailyAvgView": 3874.32
         }
       ]
     },
@@ -1189,23 +1378,23 @@
       "hasData": true,
       "pubdate": 1784717074,
       "publishedAt": "2026-07-22 18:44:34",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 61989,
-      "reply": 1475,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 62016,
+      "reply": 1476,
       "like": 1566,
       "coin": 2806,
       "favorite": 1600,
-      "share": 670,
-      "hourlyView": 9,
-      "todayView": 45,
+      "share": 671,
+      "hourlyView": 27,
+      "todayView": 72,
       "days": 21,
-      "dailyAvgView": 2951.86,
+      "dailyAvgView": 2953.14,
       "rates": {
-        "reply": 2.3795,
-        "like": 2.5263,
-        "coin": 4.5266,
-        "favorite": 2.5811,
-        "share": 1.0808
+        "reply": 2.38,
+        "like": 2.5252,
+        "coin": 4.5246,
+        "favorite": 2.58,
+        "share": 1.082
       },
       "history": [
         {
@@ -1257,6 +1446,16 @@
           "favorite": 1600,
           "share": 670,
           "danmaku": 117
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 62016,
+          "reply": 1476,
+          "like": 1566,
+          "coin": 2806,
+          "favorite": 1600,
+          "share": 671,
+          "danmaku": 117
         }
       ],
       "hourlyDeltas": [
@@ -1295,6 +1494,15 @@
           "coin": 0,
           "favorite": 0,
           "share": 0
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 27,
+          "reply": 1,
+          "like": 0,
+          "coin": 0,
+          "favorite": 0,
+          "share": 1
         }
       ],
       "rateTrend": [
@@ -1337,14 +1545,22 @@
           "coin": 4.5266,
           "favorite": 2.5811,
           "share": 1.0808
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 2.38,
+          "like": 2.5252,
+          "coin": 4.5246,
+          "favorite": 2.58,
+          "share": 1.082
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 61989,
+          "view": 62016,
           "days": 21,
-          "dailyAvgView": 2951.86
+          "dailyAvgView": 2953.14
         }
       ]
     },
@@ -1354,23 +1570,23 @@
       "hasData": true,
       "pubdate": 1785315707,
       "publishedAt": "2026-07-29 17:01:47",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 47417,
-      "reply": 626,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 47435,
+      "reply": 627,
       "like": 902,
       "coin": 1626,
       "favorite": 925,
       "share": 363,
-      "hourlyView": 5,
-      "todayView": 20,
+      "hourlyView": 18,
+      "todayView": 38,
       "days": 14,
-      "dailyAvgView": 3386.93,
+      "dailyAvgView": 3388.21,
       "rates": {
-        "reply": 1.3202,
-        "like": 1.9023,
-        "coin": 3.4291,
-        "favorite": 1.9508,
-        "share": 0.7655
+        "reply": 1.3218,
+        "like": 1.9015,
+        "coin": 3.4278,
+        "favorite": 1.95,
+        "share": 0.7653
       },
       "history": [
         {
@@ -1422,6 +1638,16 @@
           "favorite": 925,
           "share": 363,
           "danmaku": 78
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 47435,
+          "reply": 627,
+          "like": 902,
+          "coin": 1626,
+          "favorite": 925,
+          "share": 363,
+          "danmaku": 78
         }
       ],
       "hourlyDeltas": [
@@ -1456,6 +1682,15 @@
           "time": "2026-08-11 19:34:11",
           "view": 5,
           "reply": 0,
+          "like": 0,
+          "coin": 0,
+          "favorite": 0,
+          "share": 0
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 18,
+          "reply": 1,
           "like": 0,
           "coin": 0,
           "favorite": 0,
@@ -1502,14 +1737,22 @@
           "coin": 3.4291,
           "favorite": 1.9508,
           "share": 0.7655
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 1.3218,
+          "like": 1.9015,
+          "coin": 3.4278,
+          "favorite": 1.95,
+          "share": 0.7653
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 47417,
+          "view": 47435,
           "days": 14,
-          "dailyAvgView": 3386.93
+          "dailyAvgView": 3388.21
         }
       ]
     },
@@ -1519,20 +1762,20 @@
       "hasData": true,
       "pubdate": 1781694000,
       "publishedAt": "2026-06-17 19:00:00",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 84380,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 84381,
       "reply": 433,
       "like": 386,
       "coin": 592,
       "favorite": 392,
       "share": 376,
-      "hourlyView": 0,
-      "todayView": 5,
+      "hourlyView": 1,
+      "todayView": 6,
       "days": 56,
-      "dailyAvgView": 1506.79,
+      "dailyAvgView": 1506.8,
       "rates": {
-        "reply": 0.5132,
-        "like": 0.4575,
+        "reply": 0.5131,
+        "like": 0.4574,
         "coin": 0.7016,
         "favorite": 0.4646,
         "share": 0.4456
@@ -1587,6 +1830,16 @@
           "favorite": 392,
           "share": 376,
           "danmaku": 93
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 84381,
+          "reply": 433,
+          "like": 386,
+          "coin": 592,
+          "favorite": 392,
+          "share": 376,
+          "danmaku": 93
         }
       ],
       "hourlyDeltas": [
@@ -1620,6 +1873,15 @@
         {
           "time": "2026-08-11 19:34:11",
           "view": 0,
+          "reply": 0,
+          "like": 0,
+          "coin": 0,
+          "favorite": 0,
+          "share": 0
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 1,
           "reply": 0,
           "like": 0,
           "coin": 0,
@@ -1667,14 +1929,22 @@
           "coin": 0.7016,
           "favorite": 0.4646,
           "share": 0.4456
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 0.5131,
+          "like": 0.4574,
+          "coin": 0.7016,
+          "favorite": 0.4646,
+          "share": 0.4456
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 84380,
+          "view": 84381,
           "days": 56,
-          "dailyAvgView": 1506.79
+          "dailyAvgView": 1506.8
         }
       ]
     },
@@ -1684,23 +1954,23 @@
       "hasData": true,
       "pubdate": 1785825289,
       "publishedAt": "2026-08-04 14:34:49",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 11483,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 11485,
       "reply": 11,
       "like": 80,
       "coin": 147,
       "favorite": 75,
       "share": 102,
       "hourlyView": 2,
-      "todayView": 6,
+      "todayView": 8,
       "days": 8,
-      "dailyAvgView": 1435.38,
+      "dailyAvgView": 1435.62,
       "rates": {
         "reply": 0.0958,
-        "like": 0.6967,
-        "coin": 1.2802,
-        "favorite": 0.6531,
-        "share": 0.8883
+        "like": 0.6966,
+        "coin": 1.2799,
+        "favorite": 0.653,
+        "share": 0.8881
       },
       "history": [
         {
@@ -1752,6 +2022,16 @@
           "favorite": 75,
           "share": 102,
           "danmaku": 2
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 11485,
+          "reply": 11,
+          "like": 80,
+          "coin": 147,
+          "favorite": 75,
+          "share": 102,
+          "danmaku": 2
         }
       ],
       "hourlyDeltas": [
@@ -1787,6 +2067,15 @@
           "view": 2,
           "reply": 0,
           "like": 1,
+          "coin": 0,
+          "favorite": 0,
+          "share": 0
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 2,
+          "reply": 0,
+          "like": 0,
           "coin": 0,
           "favorite": 0,
           "share": 0
@@ -1832,14 +2121,22 @@
           "coin": 1.2802,
           "favorite": 0.6531,
           "share": 0.8883
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 0.0958,
+          "like": 0.6966,
+          "coin": 1.2799,
+          "favorite": 0.653,
+          "share": 0.8881
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 11483,
+          "view": 11485,
           "days": 8,
-          "dailyAvgView": 1435.38
+          "dailyAvgView": 1435.62
         }
       ]
     },
@@ -1849,22 +2146,22 @@
       "hasData": true,
       "pubdate": 1778241600,
       "publishedAt": "2026-05-08 20:00:00",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 120838,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 120840,
       "reply": 5480,
       "like": 11572,
       "coin": 20136,
       "favorite": 13035,
       "share": 1199,
       "hourlyView": 2,
-      "todayView": 8,
+      "todayView": 10,
       "days": 96,
-      "dailyAvgView": 1258.73,
+      "dailyAvgView": 1258.75,
       "rates": {
-        "reply": 4.535,
-        "like": 9.5765,
-        "coin": 16.6636,
-        "favorite": 10.7872,
+        "reply": 4.5349,
+        "like": 9.5763,
+        "coin": 16.6634,
+        "favorite": 10.787,
         "share": 0.9922
       },
       "history": [
@@ -1917,6 +2214,16 @@
           "favorite": 13035,
           "share": 1199,
           "danmaku": 193
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 120840,
+          "reply": 5480,
+          "like": 11572,
+          "coin": 20136,
+          "favorite": 13035,
+          "share": 1199,
+          "danmaku": 193
         }
       ],
       "hourlyDeltas": [
@@ -1949,6 +2256,15 @@
         },
         {
           "time": "2026-08-11 19:34:11",
+          "view": 2,
+          "reply": 0,
+          "like": 0,
+          "coin": 0,
+          "favorite": 0,
+          "share": 0
+        },
+        {
+          "time": "2026-08-11 23:32:01",
           "view": 2,
           "reply": 0,
           "like": 0,
@@ -1997,14 +2313,22 @@
           "coin": 16.6636,
           "favorite": 10.7872,
           "share": 0.9922
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 4.5349,
+          "like": 9.5763,
+          "coin": 16.6634,
+          "favorite": 10.787,
+          "share": 0.9922
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 120838,
+          "view": 120840,
           "days": 96,
-          "dailyAvgView": 1258.73
+          "dailyAvgView": 1258.75
         }
       ]
     },
@@ -2014,21 +2338,21 @@
       "hasData": true,
       "pubdate": 1781184167,
       "publishedAt": "2026-06-11 21:22:47",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 55127,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 55130,
       "reply": 233,
       "like": 246,
       "coin": 399,
       "favorite": 274,
       "share": 231,
-      "hourlyView": 0,
-      "todayView": 3,
+      "hourlyView": 3,
+      "todayView": 6,
       "days": 62,
-      "dailyAvgView": 889.15,
+      "dailyAvgView": 889.19,
       "rates": {
-        "reply": 0.4227,
+        "reply": 0.4226,
         "like": 0.4462,
-        "coin": 0.7238,
+        "coin": 0.7237,
         "favorite": 0.497,
         "share": 0.419
       },
@@ -2082,6 +2406,16 @@
           "favorite": 274,
           "share": 231,
           "danmaku": 98
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 55130,
+          "reply": 233,
+          "like": 246,
+          "coin": 399,
+          "favorite": 274,
+          "share": 231,
+          "danmaku": 98
         }
       ],
       "hourlyDeltas": [
@@ -2115,6 +2449,15 @@
         {
           "time": "2026-08-11 19:34:11",
           "view": 0,
+          "reply": 0,
+          "like": 0,
+          "coin": 0,
+          "favorite": 0,
+          "share": 0
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 3,
           "reply": 0,
           "like": 0,
           "coin": 0,
@@ -2162,14 +2505,22 @@
           "coin": 0.7238,
           "favorite": 0.497,
           "share": 0.419
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 0.4226,
+          "like": 0.4462,
+          "coin": 0.7237,
+          "favorite": 0.497,
+          "share": 0.419
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 55127,
+          "view": 55130,
           "days": 62,
-          "dailyAvgView": 889.15
+          "dailyAvgView": 889.19
         }
       ]
     },
@@ -2179,17 +2530,17 @@
       "hasData": true,
       "pubdate": 1782376418,
       "publishedAt": "2026-06-25 16:33:38",
-      "latestTime": "2026-08-11 19:34:11",
-      "view": 51314,
+      "latestTime": "2026-08-11 23:32:01",
+      "view": 51315,
       "reply": 153,
       "like": 157,
       "coin": 262,
       "favorite": 156,
       "share": 134,
-      "hourlyView": 0,
-      "todayView": 3,
+      "hourlyView": 1,
+      "todayView": 4,
       "days": 48,
-      "dailyAvgView": 1069.04,
+      "dailyAvgView": 1069.06,
       "rates": {
         "reply": 0.2982,
         "like": 0.306,
@@ -2247,6 +2598,16 @@
           "favorite": 156,
           "share": 134,
           "danmaku": 13
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 51315,
+          "reply": 153,
+          "like": 157,
+          "coin": 262,
+          "favorite": 156,
+          "share": 134,
+          "danmaku": 13
         }
       ],
       "hourlyDeltas": [
@@ -2280,6 +2641,15 @@
         {
           "time": "2026-08-11 19:34:11",
           "view": 0,
+          "reply": 0,
+          "like": 0,
+          "coin": 0,
+          "favorite": 0,
+          "share": 0
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "view": 1,
           "reply": 0,
           "like": 0,
           "coin": 0,
@@ -2327,14 +2697,22 @@
           "coin": 0.5106,
           "favorite": 0.304,
           "share": 0.2611
+        },
+        {
+          "time": "2026-08-11 23:32:01",
+          "reply": 0.2982,
+          "like": 0.306,
+          "coin": 0.5106,
+          "favorite": 0.304,
+          "share": 0.2611
         }
       ],
       "dailyAvgTrend": [
         {
           "date": "2026-08-11",
-          "view": 51314,
+          "view": 51315,
           "days": 48,
-          "dailyAvgView": 1069.04
+          "dailyAvgView": 1069.06
         }
       ]
     }
