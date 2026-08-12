@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12 13:18:49",
+  "updatedAt": "2026-08-12 17:49:04",
   "source": "https://api.bilibili.com/x/web-interface/view",
   "order": [
     "BV1o9uy6jEyM",
@@ -19,13 +19,13 @@
   ],
   "summary": {
     "videoCount": 14,
-    "totalView": 1165959,
-    "totalReply": 37929,
-    "avgReplyRate": 2.2078,
-    "avgLikeRate": 3.6124,
-    "avgCoinRate": 6.1548,
-    "avgFavoriteRate": 3.9539,
-    "avgShareRate": 0.7863
+    "totalView": 1167015,
+    "totalReply": 37931,
+    "avgReplyRate": 2.206,
+    "avgLikeRate": 3.6094,
+    "avgCoinRate": 6.1498,
+    "avgFavoriteRate": 3.9506,
+    "avgShareRate": 0.7853
   },
   "videos": [
     {
@@ -1038,27 +1038,27 @@
     },
     {
       "bvid": "BV1NfKw6AEeo",
-      "title": "8月【秋叶ComfyUI桌面版】全新发布！ai绘画ai视频一键生成，适配20/30/40/50系显卡，Win+Mac一键安装解压即用无私传递（附整合包+工作流）",
+      "title": "8月【ComfyUI桌面版】全新发布！ai绘画ai视频一键生成，适配20/30/40/50系显卡，Win+Mac一键安装解压即用无私传递（附整合包+工作流）",
       "hasData": true,
       "pubdate": 1784355819,
       "publishedAt": "2026-07-18 14:23:39",
-      "latestTime": "2026-08-12 13:17:44",
-      "view": 71560,
-      "reply": 1404,
-      "like": 2136,
+      "latestTime": "2026-08-12 17:47:58",
+      "view": 72610,
+      "reply": 1406,
+      "like": 2137,
       "coin": 3430,
-      "favorite": 2481,
+      "favorite": 2484,
       "share": 681,
-      "hourlyView": 1060,
-      "todayView": 1065,
+      "hourlyView": 1050,
+      "todayView": 2115,
       "days": 26,
-      "dailyAvgView": 2752.31,
+      "dailyAvgView": 2792.69,
       "rates": {
-        "reply": 1.962,
-        "like": 2.9849,
-        "coin": 4.7932,
-        "favorite": 3.467,
-        "share": 0.9516
+        "reply": 1.9364,
+        "like": 2.9431,
+        "coin": 4.7239,
+        "favorite": 3.421,
+        "share": 0.9379
       },
       "history": [
         {
@@ -1150,6 +1150,16 @@
           "favorite": 2481,
           "share": 681,
           "danmaku": 176
+        },
+        {
+          "time": "2026-08-12 17:47:58",
+          "view": 72610,
+          "reply": 1406,
+          "like": 2137,
+          "coin": 3430,
+          "favorite": 2484,
+          "share": 681,
+          "danmaku": 176
         }
       ],
       "hourlyDeltas": [
@@ -1223,6 +1233,15 @@
           "like": 2,
           "coin": 0,
           "favorite": 5,
+          "share": 0
+        },
+        {
+          "time": "2026-08-12 17:47:58",
+          "view": 1050,
+          "reply": 2,
+          "like": 1,
+          "coin": 0,
+          "favorite": 3,
           "share": 0
         }
       ],
@@ -1298,6 +1317,14 @@
           "coin": 4.7932,
           "favorite": 3.467,
           "share": 0.9516
+        },
+        {
+          "time": "2026-08-12 17:47:58",
+          "reply": 1.9364,
+          "like": 2.9431,
+          "coin": 4.7239,
+          "favorite": 3.421,
+          "share": 0.9379
         }
       ],
       "dailyAvgTrend": [
@@ -1309,9 +1336,9 @@
         },
         {
           "date": "2026-08-12",
-          "view": 71560,
+          "view": 72610,
           "days": 26,
-          "dailyAvgView": 2752.31
+          "dailyAvgView": 2792.69
         }
       ]
     },
@@ -2581,23 +2608,23 @@
       "hasData": true,
       "pubdate": 1785825289,
       "publishedAt": "2026-08-04 14:34:49",
-      "latestTime": "2026-08-12 13:17:44",
-      "view": 11485,
+      "latestTime": "2026-08-12 17:47:58",
+      "view": 11489,
       "reply": 11,
       "like": 80,
       "coin": 147,
       "favorite": 75,
       "share": 102,
-      "hourlyView": 0,
-      "todayView": 0,
+      "hourlyView": 4,
+      "todayView": 4,
       "days": 9,
-      "dailyAvgView": 1276.11,
+      "dailyAvgView": 1276.56,
       "rates": {
-        "reply": 0.0958,
-        "like": 0.6966,
-        "coin": 1.2799,
-        "favorite": 0.653,
-        "share": 0.8881
+        "reply": 0.0957,
+        "like": 0.6963,
+        "coin": 1.2795,
+        "favorite": 0.6528,
+        "share": 0.8878
       },
       "history": [
         {
@@ -2689,6 +2716,16 @@
           "favorite": 75,
           "share": 102,
           "danmaku": 2
+        },
+        {
+          "time": "2026-08-12 17:47:58",
+          "view": 11489,
+          "reply": 11,
+          "like": 80,
+          "coin": 147,
+          "favorite": 75,
+          "share": 102,
+          "danmaku": 2
         }
       ],
       "hourlyDeltas": [
@@ -2758,6 +2795,15 @@
         {
           "time": "2026-08-12 13:17:44",
           "view": 0,
+          "reply": 0,
+          "like": 0,
+          "coin": 0,
+          "favorite": 0,
+          "share": 0
+        },
+        {
+          "time": "2026-08-12 17:47:58",
+          "view": 4,
           "reply": 0,
           "like": 0,
           "coin": 0,
@@ -2837,6 +2883,14 @@
           "coin": 1.2799,
           "favorite": 0.653,
           "share": 0.8881
+        },
+        {
+          "time": "2026-08-12 17:47:58",
+          "reply": 0.0957,
+          "like": 0.6963,
+          "coin": 1.2795,
+          "favorite": 0.6528,
+          "share": 0.8878
         }
       ],
       "dailyAvgTrend": [
@@ -2848,9 +2902,9 @@
         },
         {
           "date": "2026-08-12",
-          "view": 11485,
+          "view": 11489,
           "days": 9,
-          "dailyAvgView": 1276.11
+          "dailyAvgView": 1276.56
         }
       ]
     },
@@ -3360,24 +3414,24 @@
     },
     {
       "bvid": "BV15c7h6REzw",
-      "title": "【秋叶 ComfyUI】秋叶最新发布！支持20/30/40/50系显卡，ComfyUI V10中文整合包来了！Win+Mac一键安装（附Comfyui整合包）",
+      "title": "【八月 ComfyUI】最新发布！支持20/30/40/50系显卡，ComfyUI V10中文整合包来了！Win+Mac一键安装（附Comfyui整合包）",
       "hasData": true,
       "pubdate": 1782376418,
       "publishedAt": "2026-06-25 16:33:38",
-      "latestTime": "2026-08-12 13:17:44",
-      "view": 51315,
+      "latestTime": "2026-08-12 17:47:58",
+      "view": 51317,
       "reply": 153,
       "like": 157,
       "coin": 262,
       "favorite": 156,
       "share": 134,
-      "hourlyView": 0,
-      "todayView": 0,
+      "hourlyView": 2,
+      "todayView": 2,
       "days": 49,
-      "dailyAvgView": 1047.24,
+      "dailyAvgView": 1047.29,
       "rates": {
-        "reply": 0.2982,
-        "like": 0.306,
+        "reply": 0.2981,
+        "like": 0.3059,
         "coin": 0.5106,
         "favorite": 0.304,
         "share": 0.2611
@@ -3472,6 +3526,16 @@
           "favorite": 156,
           "share": 134,
           "danmaku": 13
+        },
+        {
+          "time": "2026-08-12 17:47:58",
+          "view": 51317,
+          "reply": 153,
+          "like": 157,
+          "coin": 262,
+          "favorite": 156,
+          "share": 134,
+          "danmaku": 13
         }
       ],
       "hourlyDeltas": [
@@ -3541,6 +3605,15 @@
         {
           "time": "2026-08-12 13:17:44",
           "view": 0,
+          "reply": 0,
+          "like": 0,
+          "coin": 0,
+          "favorite": 0,
+          "share": 0
+        },
+        {
+          "time": "2026-08-12 17:47:58",
+          "view": 2,
           "reply": 0,
           "like": 0,
           "coin": 0,
@@ -3620,6 +3693,14 @@
           "coin": 0.5106,
           "favorite": 0.304,
           "share": 0.2611
+        },
+        {
+          "time": "2026-08-12 17:47:58",
+          "reply": 0.2981,
+          "like": 0.3059,
+          "coin": 0.5106,
+          "favorite": 0.304,
+          "share": 0.2611
         }
       ],
       "dailyAvgTrend": [
@@ -3631,9 +3712,9 @@
         },
         {
           "date": "2026-08-12",
-          "view": 51315,
+          "view": 51317,
           "days": 49,
-          "dailyAvgView": 1047.24
+          "dailyAvgView": 1047.29
         }
       ]
     }
